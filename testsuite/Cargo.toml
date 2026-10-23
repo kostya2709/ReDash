@@ -1,0 +1,12 @@
+[package]
+name = "redash_testsuite"
+version = "0.1.0"
+edition = "2021"
+
+# Shared correctness suite reused by every step (steps 0–9).
+# A step crate adds this as a dev-dependency and invokes `dash_correctness_suite!`
+# with its own constructor closure. Write the tests once, run them everywhere.
+
+[lib]
+name = "redash_testsuite"
+path = "src/lib.rs"

@@ -1,0 +1,13 @@
+[package]
+name = "redash_step0"
+version = "0.1.0"
+edition = "2021"
+
+# No dependencies: the hasher is std's SipHash (DefaultHasher).
+
+[lib]
+name = "redash_step0"
+path = "src/lib.rs"
+
+[dev-dependencies]
+redash_testsuite = { path = "../../testsuite" }

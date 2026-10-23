@@ -1,0 +1,22 @@
+[package]
+name = "redash_bench"
+version = "0.1.0"
+edition = "2021"
+
+# Interleaved benchmark of the ten ladder steps (rdtscp timing, core-pinned, x86-64 Linux).
+[dependencies]
+libc = "0.2"
+redash_step0 = { path = "../ladder/step0-naive-port" }
+redash_step1 = { path = "../ladder/step1-simd-fingerprint" }
+redash_step2 = { path = "../ladder/step2-raw-pointer-directory" }
+redash_step3 = { path = "../ladder/step3-pool-allocator" }
+redash_step4 = { path = "../ladder/step4-foldhash" }
+redash_step5 = { path = "../ladder/step5-routing-bits" }
+redash_step6 = { path = "../ladder/step6-rehash-free-placement" }
+redash_step7 = { path = "../ladder/step7-separated-metadata" }
+redash_step8 = { path = "../ladder/step8-positional-split" }
+redash_step9 = { path = "../ladder/step9-insert-prefetch" }
+
+[[bin]]
+name = "redash_bench"
+path = "src/main.rs"

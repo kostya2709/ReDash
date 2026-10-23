@@ -1,0 +1,13 @@
+[package]
+name = "redash_step2"
+version = "0.1.0"
+edition = "2021"
+
+# No dependencies: still std's SipHash (DefaultHasher); FoldHash arrives in step 4.
+
+[lib]
+name = "redash_step2"
+path = "src/lib.rs"
+
+[dev-dependencies]
+redash_testsuite = { path = "../../testsuite" }

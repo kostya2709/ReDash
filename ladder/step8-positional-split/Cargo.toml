@@ -1,0 +1,16 @@
+[package]
+name = "redash_step8"
+version = "0.1.0"
+edition = "2021"
+
+# FoldHash (from step 4) is the default hasher.
+
+[dependencies]
+foldhash = "0.2"
+
+[lib]
+name = "redash_step8"
+path = "src/lib.rs"
+
+[dev-dependencies]
+redash_testsuite = { path = "../../testsuite" }

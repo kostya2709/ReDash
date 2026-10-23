@@ -1,0 +1,12 @@
+commit 00d382f160d85b098647dc5b2c4004a0065135b5
+host aspdragun
+rustc rustc 1.95.0 (59807616e 2026-04-14)
+started 2026-08-21T01:27:35+00:00
+layout_sweeps 6
+ladder_sweeps 3
+e1_reps 3
+sizes 100000 300000 1000000 3000000 10000000 30000000
+layout_variants main,m4,soa14,v1,v2,v3,v4,v4d,v4p,v5,v6,v7,v8,v4s,v4x
+ladder m0 m1 m2 m3 m4 m5 m6 m7 m8 m9
+finished 2026-08-21T08:44:39+00:00
+status OK

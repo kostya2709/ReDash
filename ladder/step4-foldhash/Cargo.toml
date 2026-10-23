@@ -1,0 +1,17 @@
+[package]
+name = "redash_step4"
+version = "0.1.0"
+edition = "2021"
+
+# Step 4 replaces std's SipHash with FoldHash.
+
+[dependencies]
+foldhash = "0.2"
+
+[lib]
+name = "redash_step4"
+path = "src/lib.rs"
+
+[dev-dependencies]
+redash_testsuite = { path = "../../testsuite" }
+

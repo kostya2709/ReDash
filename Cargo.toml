@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "testsuite",
+    "ladder/step0-naive-port",
+    "ladder/step1-simd-fingerprint",
+    "ladder/step2-raw-pointer-directory",
+    "ladder/step3-pool-allocator",
+    "ladder/step4-foldhash",
+    "ladder/step5-routing-bits",
+    "ladder/step6-rehash-free-placement",
+    "ladder/step7-separated-metadata",
+    "ladder/step8-positional-split",
+    "ladder/step9-insert-prefetch",
+    "bench",
+]
+
+# Every step is built the same way. With lto=false and codegen-units=16, crate boundaries
+# alone moved the find_hit delta between steps by 20-30 percentage points.
+[profile.release]
+lto = "fat"
+codegen-units = 1
