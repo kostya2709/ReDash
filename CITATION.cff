@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ReDash: implementation ladder and measurements for ReDASH"
+authors:
+  - family-names: Dragun
+    given-names: Konstantin
+license: MIT
+repository-code: "https://github.com/kostya2709/ReDash"
+date-released: 2026-10-23

@@ -134,6 +134,11 @@ scripts/      summarise.py: sweeps -> per-step table
 data/         published measurements and their provenance
 ```
 
+## License
+
+MIT; see [LICENSE](LICENSE). To cite this repository, use [CITATION.cff](CITATION.cff)
+(GitHub's "Cite this repository" button).
+
 ## Attribution
 
 The ladder is a Rust reimplementation of the DASH design and follows the structure of the
