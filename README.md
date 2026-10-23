@@ -66,8 +66,9 @@ python3 scripts/summarise.py data/canonical/ladder_sweep1 data/canonical/ladder_
 
 It compares each step with the previous one. An effect is listed at a size only where the
 two pooled ranges (min over sweeps of the per-sweep minimum, max over sweeps of the
-per-sweep maximum) do not overlap; its size is the median across sweeps of the within-sweep
-medians, as in the paper's ladder table. `--minima` uses the within-sweep minima instead,
+per-sweep maximum) do not overlap. Its percentage change is
+100 × (median_step / median_predecessor − 1), using medians across sweeps of the
+within-sweep medians, as in the paper's ladder table. `--minima` uses the within-sweep minima instead,
 the estimator the rest of the paper uses.
 
 ## Running fresh measurements
@@ -99,8 +100,9 @@ Use an idle machine; the full grid takes hours. For a quick look, use smaller `S
 **Fresh runs are not the published runs.** This benchmark binary is a cleaned-up version
 of the one that produced `data/canonical/`: it measures the same ladder code with the same
 protocol, but it bounds values to 48 bits, adds the untimed correctness check, writes one
-directory per sweep, and drops comparisons that are not part of the ladder. Expect the
-same direction and similar size of effects, not identical numbers.
+directory per sweep, and drops comparisons that are not part of the ladder. Fresh results depend
+on hardware and build configuration; neither the direction nor the magnitude of an effect
+is guaranteed to match the published measurements.
 
 ## Data
 
