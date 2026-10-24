@@ -1,7 +1,7 @@
 # ReDash
 
 Code and data accompanying the paper *ReDASH: A Cache-Conscious Extendible Hash Table for
-DRAM* (submitted to Труды ИСП РАН / Proceedings of ISP RAS).
+DRAM*.
 
 [DASH](https://github.com/baotonglu/dash) (Lu et al., VLDB 2020) is an extendible hash table
 designed for persistent memory. ReDASH is a DRAM redesign of it whose main change is
