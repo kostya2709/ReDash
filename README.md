@@ -55,7 +55,8 @@ keep it, since crate boundaries alone moved one step's `find_hit` delta by 20–
 
 ## Reproducing the paper's ladder table from the published data
 
-`data/canonical/` holds the three ladder sweeps the paper reports, unmodified (see
+A *sweep* is one complete pass over the specified variants and table sizes, executed in a
+single benchmark process. `data/canonical/` holds the three ladder sweeps the paper reports, unmodified (see
 [Data](#data)). To regenerate the insert and lookup columns of the ladder table (not its split-cost
 figures) without rerunning anything:
 
